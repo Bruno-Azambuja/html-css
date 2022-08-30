@@ -35,14 +35,18 @@
         Podemos criar também um <mark>texto marcado</mark> com a tag &lt;mark&gt; (semantica).
     </p>
 
-    <p>Aqui temos outro <mark style="background-color: cornflowerblue;">texto marcado</mark> mas com a cor diferente, pois foi usado CSS.</p>
+    <p>
+        Aqui temos outro <mark style="background-color: cornflowerblue;">texto marcado</mark> mas com a cor diferente, pois foi usado CSS.
+    </p>
 
     <h2>Texto Grande e Pequeno</h2>
     
-    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small>. <br>
-    A tag &lt;big&gt;, usada para o texto grande, está obsoleta no html5, pois para aumentar um texto usa-se o CSS. (não semantica)<br>
-    A a tag &lt;small&gt; não esta obsoleta. O professor usa um exemplo: <br>
-    Nos contratos "leias as letras pequenas", quer dizer que elas são observações importantes mas você consegue dar sentido para letras pequenas com a tag &lt;small&gt; (semântica).</p>
+    <p>
+        Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small>. <br>
+        A tag &lt;big&gt;, usada para o texto grande, está obsoleta no html5, pois para aumentar um texto usa-se o CSS. (não semantica)<br>
+        A a tag &lt;small&gt; não esta obsoleta. O professor usa um exemplo: <br>
+        Nos contratos "leias as letras pequenas", quer dizer que elas são observações importantes mas você consegue dar sentido para letras pequenas com a tag &lt;small&gt; (semântica).
+    </p>
 
     <h2>Texto Deletado</h2>
 
@@ -70,6 +74,68 @@
 
     <p>
         Para inserir coisas do tipo H2O. O "2" do H<sub>2</sub>O deve estar na tag &lt;sub&gt; (semântica).
+    </p>
+
+    <hr>
+
+    <h1>Outras Formatações</h1>
+
+    <h2>Código-fonte</h2>
+
+    <p>
+        O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript. Ela está sendo apresentada com uma fonte mono espaçada, usando a tag &lt; code &gt; que são todas as letras com o mesmo espaço, tornando melhor a leitura. O valor semântico que ela representa é sua principal vantagem, indicando ao navegador que se trata de um código de computador (fonte de código).
+    </p>
+
+    <h2>Exemplo de Código Phyton</h2>
+
+    <h4>(Essa linha de código abaixo, está sob a tag code).</h4>
+
+    <code>
+        num = int(input('Digite um número')) if num % 2 = 0: print(f'O número {num} é PAR') else: print(f'O número {num é ÍMPAR}) print('Fim do programa')
+    </code>
+
+    <h4>
+        Para deixar <ins>identado</ins>, envelope todo o conteúdo junto com a tag code e coloque na tag &lt; pre &gt;. <br>
+        Ficará assim:
+    </h4>
+
+    <pre>
+        <code>
+            num = int(input('Digite um número')) 
+            if num % 2 = 0:
+                print(f'O número {num} é PAR')
+            else:
+                print(f'O número {num é ÍMPAR})
+            print('Fim do programa')
+        </code>
+    </pre>
+
+    <h2>Citações</h2>
+
+    <p>
+        Como diria o pai de um amigo: <q> O computador é um burro muito rápido.</q>
+        Você usa a tag &lt; q &gt; para colocar as aspas quando for uma citação. Caso seja uma coisa qualquer pode apenas colocar as aspas "". A tag "q" é com semântica.
+    </p>
+
+    <h2>Citações Completas</h2>
+
+    <p>
+        Segundo Jeff Noble no seu livro HTML para leigos. exemplo:
+    </p>
+    <blockquote cite="AQUI VOCE COLOCA O LINK DE ONDE VOCÊ TIROU A CITAÇÃO, OU LINK DE VENDA, OU QUE ESTEJA RELACIONADO AO LIVRO.">
+        A diferença entre elemento inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto
+    </blockquote>
+
+    <p>
+        Na frente do blockquote você pode usar um parâmetro: cite= e colocar o link do livro ou onde teve essa frase do autor. Isso não fará aparecer um link no site mas os mecanismos de buscas, o google, a parte interna do teu site vai saber que essa frase está referênciando o livro que está disponivel no endereço que vc colocou(link).
+
+        Abreviações
+        Estou estudando HTML e CSS. Estou adorando!
+        Coloque o mouse em cima das siglas e veja que aparece o nome que elas significam. Para isso você usa a tag < abbr >.
+
+        Texto Invertido
+        Com a tag (bdo) seguido de (rtl), você cria um texto invertido veja o exemplo:
+        Estou aprendendo criar coisas em HTML
     </p>
 </body>
 </html>
