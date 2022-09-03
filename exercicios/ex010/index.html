@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>
+        Usando Links Externos
+    </h1>
+
+    <p>
+        Para links, usamos a tag &lt;a&gt; (com fechamento). Com essa tag tem alguns atributos para melhorar a navegação.
+    </p>
+    
+    <p>
+        O atributo (target =""), informa ao navegador como o redirecionamento deverá ocorrer, abrindo a página na mesma janela/aba do navegador ou abrindo uma nova janela/aba.
+    </p>
+
+    <p>
+        Os atributos target são:
+    </p>
+
+    <ul>
+        <li>_blank: abre a página em uma nova janela/aba;</li>
+        <li>_self: abre a página na mesma janela;</li>
+        <li>_parent: abre a página na mesma janela do link;</li>
+        <li>_top: cancela todos os demais frames e abre a nova página no mesmo navegador.</li>
+    </ul>
+
+    <p>
+        Seguido do atributo (rel=""), que não encontrei ao certo sua utilização na ancora &lt;a&gt;, mas de acordo com as aulas, usamos:
+    </p>
+
+    <ul>
+        <li>rel = "external"- Se for abrir em outra janela/aba.</li>
+        <li>rel = "next" - Se for abrir na mesma janela/aba.</li>
+        <li>rel = "prev" - Se for voltar para pagina principal(home, index..).</li>
+        <li>rel = "nofollow" - O nofollow é um atributo HTML que permite pedir ao Google e a outros motores de busca a desconsideração de um link em específico para fins de SEO. De forma simples, como o nome sugere, ele informa os bots de rastreamento do Google para não “seguirem” o link.</li>
+    </ul>
+
+    <h2>Exercícios</h2>
+
+    <p>
+        Você pode acessar meu <a href="https://github.com/Bruno-Azambuja" target="_blank" rel="EXTERNAL">Github</a>
+    </p>
+
+    <H1>
+        Usando Links Internos
+    </H1>
+
+    <p>
+        Essa é a primeira página do site. Pode acessar a segunda página <a href="pagina02.html" target="_self" rel="next">aqui</a>.
+    </p>
+
+    <p>
+        Acesse nossa <a href="notícias/noticias.html" target="_self" rel="next">página de notícias</a>.
+    </p>
+
+    <h1>
+        Links Para Download
+    </h1>
+
+    <ul>
+        <li>
+            <a href="livro/O Poder Infinito Da Sua Mente.pdf" target="_blank" rel="external" download="O Poder Infinito Da Sua Mente.pdf">Baixar o livro PDF</a>
+        </li>
+
+        <li>
+            <a href="livro/O Poder Infinito Da Sua Mente.rar" download="O Poder Infinito Da Sua Mente.rar" type="application/rar">Baixar o Aquivo.rar</a>
+        </li>
+    </ul>
+</body>
+</html>
