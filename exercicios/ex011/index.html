@@ -16,7 +16,54 @@
     </p>
 
     <picture>
-
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Dinamica">
     </picture>
+
+    <p>
+        Use a tag &lt;picture&gt; (com fechamento), e dentro carregue a imagem. <br>
+        No exemplo temos 3 imagens, a "G" a "M" e a "P", carregue a imagem G com a tag &lt;img&gt; dentro de picture, acima dela crie a tag <strong>source:media:type</strong> (sem fechamento), e mude o <strong>media="(min-width:)"</strong> para <strong>(max-width:)</strong>, coloque o pixel (tamanho) da imagem "G" e em <strong>srcset=</strong> carregue a imagem M. Faça também com a imagem P, coloque <strong>max-width: tamanho da imagem M</strong> e em <strong>srcset</strong> carregue a imagem P.
+    </p>
+
+    <h1>
+        Reproduzindo Áudio
+    </h1>
+
+    <p>
+        Vamos aprender a reproduzir áudios em HTML5.
+    </p>
+
+    <h2>
+        Primeira Maneira
+    </h2>
+
+    <p>
+        coloque a tag áudio e carregue o arquivo.
+    </p>
+
+    <audio src="midia/skyrin-dragonborn-theme.mp3" autoplay controls></audio>
+
+    <h2>
+        Segunda Maneira
+    </h2>
+
+    <p>
+        Coloque a tag audio, apague os atributos que aparecem automaticos, deixe apenas a tag audio, e adicione source:src. Carregue o áudio e coloque o tipo.
+    </p>
+
+    
+    <audio controls preload="metadata">
+        <source src="midia/skyrin-dragonborn-theme.mp3" type="audio/mpeg">
+        <source src="midia/skyrin-dragonborn-theme.wav" type="">
+        <source src="midia/skyrin-dragonborn-theme.ogg" type="">
+        <p>
+            Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/skyrin-dragonborn-theme.mp3">Clique aqui para baixar o arquivo mp3</a>
+        </p>
+    </audio>
+
+    <p>
+        Converta o áudio para ter mais de um formato, pois não é todos os navegadores que suportam vários formatos.
+    </p>
 </body>
 </html>
