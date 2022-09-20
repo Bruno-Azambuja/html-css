@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+    background-color: darkorange;
+}
+
+div.ex1 {
+    background-color: darkseagreen;
+    padding: 8px;
+}
+
+h1 {
+    background-color: khaki;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h3 {
+    color: blue;
+}
+
+p {
+    text-align: justify;
+}
