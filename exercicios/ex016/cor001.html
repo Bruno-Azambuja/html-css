@@ -5,6 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cores em CSS</title>
+
+    <style>
+        h2.representacao01 {
+            color: blue;
+        }
+
+        h2.representacao02 {
+            color: #0000ff;
+        }
+
+        h2.representacao03 {
+            color: rgb(0, 0, 255);
+        }
+
+        h2.representacao04 {
+            color: hsl(240, 100%, 50%);
+        }
+
+    </style>
 </head>
 <body>
     <h1>
@@ -20,7 +39,7 @@
         <li>Representação por HSL (hue, saturation, lightness(luminosity))</li>
     </ul>
 
-    <h2 style="color: blue;"> 
+    <h2 class="representacao01"> 
         Representação por Nomes
     </h2>
 
@@ -28,7 +47,7 @@
         Escolher por nomes é simples. Ao digitar color (porexemplo), escolha uma cor por nomes como: <strong>red, yellow, black,</strong> etc..
     </p>
 
-    <h2 style="color: #000fdd;">
+    <h2 class="representacao02">
         Representação por Códigos Hexadecimais
     </h2>
 
@@ -40,7 +59,7 @@
         Um exemplo da cor azul que é <strong>#0000ff</strong>
     </p>
 
-    <h2 style="color: rgb(00, 03, 200);">
+    <h2 class="representacao03">
         Representação em RGB (red, green, blue)
     </h2>
 
@@ -48,12 +67,27 @@
         O sistema de cores RGB é encontrado em monitores de computador, televisão, câmeras digitais entre outros. As cores são atingidas com a mistura das três cores primárias em um número definido numa escala de 0 a 255
     </p>
 
-    <h2 style="color: hsl(255, 80, 70);">
+    <h2 class="representacao04">
         Representação por HSL (hue, saturation, lightness(luminosity))
     </h2>
 
     <p>
-        HSL é representado por Hue (tom), Saturation (saturação) e Lightness (luminosidade). O valor do tom é medido em ângulos expresso em graus. O valor de saturação é medido em porcentagem, sendo 0% um leve sombreado de saturação e 100% uma saturação total da cor.
+        HSL é representado por Hue (tom), Saturation (saturação) e Lightness (luminosidade). O valor do tom é medido em ângulos expresso em graus. <br>
+        O valor de saturação é medido em porcentagem, sendo 0% um leve sombreado de saturação e 100% uma saturação total da cor. <br>
+        E a luminosidade também é medido em porcentagem
+    </p>
+
+    <p>
+        No exemplo da cor azul do título, fica: <br>
+        <strong><code>hsl(240, 100%, 50%)</code></strong>
+    </p>
+
+    <h1>
+        Finalizando
+    </h1>
+
+    <p>
+        No final a gente acaba usando o sistema simplificado do <strong>VS Code</strong> que nos dá a possibilidade de milhares de cores.
     </p>
 </body>
 </html>
