@@ -4,29 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fontes Externas</title>
+    <title>Fontes Externas Baixadas</title>
     <style>
         @font-face {
-            font-family: 'Rock';
-            src: url('fonts/Rocks\ Personal\ Use.ttf') format('opentype');
+            font-family: 'rock';
+            src: url('fonts/Rocks Personal Use.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
         }
 
         body {
-            font-family: 'Rocks';
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-family: 'rock','Times New Roman', Times, serif;
+            font-size: 4em;
+            
         }
     </style>
 </head>
 <body>
     <h1>
-        Fontes Externas
+        Fontes Externas Baixadas
     </h1>
 
     <p>
-        Digite <strong>@font-face</strong> e escolha a opção com <strong>src</strong>, depois abra aspas com um risquinho ('xx') e escolha o nome que quer dar à fonte.
+        Digite <strong>@font-face</strong> e escolha a opção com <strong>src</strong>, em <strong>font-family: '';</strong> escolha o nome que quer dar à fonte.
     </p>
 
     <p>
-        Depois em <strong>src</strong> carregue a fonte que estiver em seu pc dentro de parentes com aspas de um risquinho (''), e na frente de um espaço e digite <strong>format ('')</strong>
+        Depois em <strong>src: url('')</strong> carregue a fonte que estiver em seu pc. <strong>ATENÇÃO</strong>: <u>Você tem que colocar o nome da fonte exatamente como ele está na pasta e deve ser entre aspas simples entre parenteses</u> <strong>('')</strong>, e na frente, ja fora das aspas, de um espaço e digite <strong>format ('')</strong>, e entre as aspas digite o formato da fonte.
     </p>
+
+    <p>
+        Caso queira carregar mais fontes, coloque uma virgula + espaço e digite <strong>url('') format('').</strong>
+    </p>
+
+    <h2>
+        Tipos de Formatos
+    </h2>
+
+    <ul>
+        <li>opentype (.otf)</li>
+        <li>truetype (.ttf)</li>
+        <li>embedded opentype</li>
+        <li>truetype-aat (Apple Advanced Typography)</li>
+        <li>svg</li>
+    </ul>
 </body>
 </html>
