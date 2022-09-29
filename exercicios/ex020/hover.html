@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1#principal {
+            background-color: aquamarine;
+            border-radius: 3px;
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.411);
+            padding: 5px;
+            margin: auto;
+            text-align: center;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.404);
+        }
+
+        div.destaque {
+            color: darkorange;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover {
+            color: darkslategray;
+        }
+
+        div:hover > p {
+            background-color: cornflowerblue;
+            color: black;
+            border-radius: 5px;
+            padding: 5px;
+            display: block;
+            text-decoration: underline;
+            width: 225px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal">
+        Exemplo de Hover
+    </h1>
+
+    <p>
+        Passe o <strong>mouse</strong> sobre o texto abaixo!
+    </p>
+
+    <div class="destaque">
+        Passe o mouse aqui!
+        <p><strong>
+            Não desista dos seus sonhos
+        </strong></p>
+    </div>
+
+    <p>
+        Fim do exemplo
+    </p>
+</body>
+</html>
