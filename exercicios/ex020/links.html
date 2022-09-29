@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul > li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: rgb(51, 184, 51);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            /* link visitado */
+            color: rgb(4, 121, 4);
+        }
+
+        a:hover {
+            /* quando passa o mouse em cima */
+            color: lightslategray;
+        }
+
+        a:active {
+            /* quando é clicado */
+            color: rgb(166, 168, 4);
+        }
+
+
+
+        li.destaque::before {
+            content: '👍';
+        }
+
+        li.destaque::after {
+            content: '👍';
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Seletores Personalizados
+    </h1>
+
+    <ul>
+        <li>
+            #   = (id) identificadores
+        </li>
+
+        <li>
+            .   = (class) classes
+        </li>
+
+        <li>
+            :   = (pseudo-classes)
+        </li>
+
+        <li>
+            ::  = (pseudo-elements)
+        </li>
+
+        <li>
+            >   = (children)
+        </li>
+    </ul>
+
+    hr
+
+    <h1>
+        Personalizando Links
+    </h1>
+
+    <ul type="circle">
+        <li><a href="https://github.com/Bruno-Azambuja" target="_blank" rel="external">
+            Repositório GitHub
+        </a></li>
+
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external">
+            Canal do YouTube do Professor
+        </a></li>
+
+        <li class="destaque"><a href="https://forbes.com.br/" target="_blank" rel="external">
+            Site qualquer
+        </a></li>
+    </ul>
+</body>
+</html>
