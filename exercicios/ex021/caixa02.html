@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+
+
+        body {
+            font-family: 'Zen Kaku Gothic New', Arial, Helvetica, sans-serif;
+        }
+
+        h1#principal {
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+        }
+
+        header > nav {
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.411);
+        }
+
+        nav > a {
+            margin-left: 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav > a:hover {
+            color: crimson;      
+        }
+
+        section#menu > p {
+            text-align: end;
+            margin-right: 20px;
+        }
+
+        #artigo > article > h2 {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.582), rgba(255, 255, 255, 0));
+            padding: 1px 8px 3px;
+            border-radius: 5px;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.432);
+        }
+
+        #artigo {
+            background-color: rgb(218, 208, 195);
+            padding: 3px 10px 8px;
+            border-radius: 3px;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.411);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.808);
+            color: white;
+            text-align: center;
+            border-radius: 2px;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.411);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="principal">
+            Exemplo de Site
+        </h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <p>
+                Tecnologia
+                Econômia
+                Esportes
+            </p>
+        </section>
+        <section id="artigo">
+            <article>
+                <h2>
+                    Conceito de Programação
+                </h2>
+                <p>
+                    Programação é o processo de criação de um conjunto de instruções que dizem ao computador como realizar uma tarefa. Programação pode ser feita usando uma variedade de "idiomas" do computador, tais como SQL, Java, Python e C++ entre várias outras linguagens.
+                </p>
+                <aside>
+                    Escrito por Bruno Azambuja
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Desenvolvido por Bruno Azambuja
+        </p>
+    </footer>
+</body>
+</html>
