@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #conteiner {
+            background-image: url('https://www.pngplay.com/wp-content/uploads/2/Target-Transparent-Background.png');      
+
+            background-color: purple;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+            height: 94vh;
+            padding: 10px;
+            position: relative; /*Toda posição já é por  padrão realtiva.*/
+            
+        }
+
+        #conteudo {
+            background-image: url('https://www.pngplay.com/wp-content/uploads/2/Target-Transparent-Background.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute; /*Colocando o position: absolut; você pode mexer em left e top, para mudar a posição do conteúdo.*/
+            height: 200px;
+            width: 350px;
+            background-color: yellow;
+
+            left: 50%; /*Podemos usar % para mexer nas posições.*/
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
