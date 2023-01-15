@@ -25,6 +25,23 @@
             border-collapse: collapse;
             text-align: center;
             margin: auto;
+            position: relative;
+        }
+
+        tbody > tr:nth-child(even) {  
+            /*
+            Efeito zebrado nas celulas
+                :nth-child(2n) - Pula uma linha de acordo com o número, 2n pula uma linha e pinta etc.
+                :nth-child(odd) - Pinta as celulas na posição ímpar.
+                :nth-child(even)  - Pinta na posição par.
+            */
+            background-color: lightgrey;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: cornflowerblue;
         }
 
         thead, tfoot {
